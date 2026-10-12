@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.22)
+project(omdrop_probe C)
+add_library(omdrop_probe SHARED native_probe.c probe_core.c)
+target_compile_features(omdrop_probe PRIVATE c_std_11)
+target_compile_options(omdrop_probe PRIVATE -Wall -Wextra -Werror -fvisibility=hidden)
+target_link_options(omdrop_probe PRIVATE "-Wl,-z,max-page-size=16384")

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">omdrop — compatibility gate</string>
+    <string name="title">omdrop Android — compatibility gate</string>
+    <string name="intro">Native iPhone AirDrop is NOT implemented or accepted. This APK checks local constraints and hashes a user-selected local file. It never substitutes LAN or Wi-Fi Direct.</string>
+    <string name="refresh">Refresh read-only capability report</string>
+    <string name="send_unavailable">Send via AirDrop — unavailable</string>
+    <string name="receive_unavailable">Receive via AirDrop — unavailable</string>
+    <string name="hash">Select local file and calculate SHA-256</string>
+    <string name="no_receipt">No local receipt. A matching hash alone does not prove AirDrop transport.</string>
+    <string name="cancel">Cancel local hashing</string>
+    <string name="cancelled">Local hashing cancelled. No receipt produced.</string>
+    <string name="save_report">Save sanitized diagnostic JSON locally</string>
+    <string name="export_failed">Could not prepare diagnostic export.</string>
+    <string name="safety">Safety: reads only this process’s capability bits and SELinux enforcement status; creates and immediately closes empty packet/netlink sockets. No binding, capture, injection, interface changes, TAP creation, root requests, unique device identifiers, router changes, or connectivity tests. File hashing is limited to 512 MiB. Cancellation invalidates results; an unresponsive document provider may delay worker shutdown.</string>
+    <string name="report_display">Local diagnostic report (not AirDrop acceptance):\n%1$s</string>
+    <string name="diagnostic_failed">Diagnostic formatting failed. AirDrop stays blocked.</string>
+    <string name="document_only">Only a user-selected document URI is supported.</string>
+    <string name="hashing">Hashing local file… no transfer occurs.</string>
+    <string name="receipt">Local bytes: %1$d\nSHA-256: %2$s\nNot AirDrop transport proof.</string>
+    <string name="hash_failed">Local hashing failed; no receipt produced.</string>
+    <string name="saved">Sanitized diagnostic JSON saved locally. AirDrop remains unavailable.</string>
+    <string name="save_failed">Could not save diagnostic JSON.</string>
+</resources>

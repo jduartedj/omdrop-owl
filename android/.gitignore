@@ -1,0 +1,8 @@
+/.gradle/
+/.tools/
+/local.properties
+/**/build/
+/.cxx/
+/**/.cxx/
+/acceptance-private/
+/**/__pycache__/

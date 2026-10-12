@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "validatedAt": "2026-10-12T01:22:58.495328+00:00",
+  "upstreamSha": "ee6a57d971c207c933a424c0d705044a02985b0a",
+  "artifactKind": "diagnostic-only; not functional AirDrop",
+  "apk": {
+    "relativeBuildPath": "android/app/build/outputs/apk/debug/app-debug.apk",
+    "sha256": "e87b4c28a96137a6cdfeaeae4a97803fe80d20dc302c189729c34f5ebe16717f",
+    "bytes": 80856,
+    "abi": [
+      "arm64-v8a"
+    ],
+    "minSdk": 31,
+    "targetSdk": 36,
+    "debugSignedV2Verified": true,
+    "zipAlignment16KiBVerified": true,
+    "packagedLicenseAssets": [
+      "assets/COPYING",
+      "assets/NOTICE.md"
+    ]
+  },
+  "tests": {
+    "jvm": {
+      "passed": 17,
+      "failed": 0,
+      "gateCombinations": 6561
+    },
+    "python": {
+      "passed": 7,
+      "failed": 0
+    },
+    "upstreamCommandDoubles": {
+      "passed": 10,
+      "failed": 0
+    },
+    "hostCAsanUbsan": "passed parsing and bit-boundary assertions",
+    "hostJNI": "passed original native C JNI plumbing; CAP_NET_ADMIN=false,CAP_NET_RAW=false,packet errno=1,generic netlink socket open=true; Linux host only",
+    "lintDebug": "No issues found; excludes only pinned toolchain update suggestions and intentionally unsupported ChromeOS ABI"
+  },
+  "sourceSnapshots": [
+    {
+      "file": "aosp-app.te",
+      "url": "https://android.googlesource.com/platform/system/sepolicy/+/android-15.0.0_r1/private/app.te?format=TEXT",
+      "sha256": "8cd4187a499f543374d46434ccb85f23b7c2995fce329c19e8d89a8af1042406"
+    },
+    {
+      "file": "aosp-untrusted_app_all.te",
+      "url": "https://android.googlesource.com/platform/system/sepolicy/+/android-15.0.0_r1/private/untrusted_app_all.te?format=TEXT",
+      "sha256": "858090a07a2b9934d87c4b5c2446a2041988c78f0702a5ee7877c7e53d2c1fe3"
+    },
+    {
+      "file": "aosp-zygote.cpp",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/android-15.0.0_r1/core/jni/com_android_internal_os_Zygote.cpp?format=TEXT",
+      "sha256": "9ba3ef6aa4db5c6796fceb1f4ea97e282636c77c35e790edadb5928c165223ba"
+    },
+    {
+      "file": "linux-nl80211.c",
+      "url": "https://raw.githubusercontent.com/torvalds/linux/v6.6/net/wireless/nl80211.c",
+      "sha256": "fb07e1d2437c7e34a38b1c4bf815cab76271a5d97027822b8f81471bdb3f25e7"
+    },
+    {
+      "file": "linux-tun.c",
+      "url": "https://raw.githubusercontent.com/torvalds/linux/v6.6/drivers/net/tun.c",
+      "sha256": "e109f2006e71ce54f5278a68c6fc9a113594a1e04866d8ccd22b61105943f70c"
+    },
+    {
+      "file": "linux-af_packet.c",
+      "url": "https://raw.githubusercontent.com/torvalds/linux/v6.6/net/packet/af_packet.c",
+      "sha256": "6d64d7dc903c47b651a35b38e1948bb62d954a91504271cccff66624adb0b655"
+    },
+    {
+      "file": "aosp-WifiManager.java",
+      "url": "https://android.googlesource.com/platform/packages/modules/Wifi/+/android-15.0.0_r1/framework/java/android/net/wifi/WifiManager.java?format=TEXT",
+      "sha256": "c0f0a71c9f8e43a6474ebac55a2a6b957c301731d75b0f2976a82275a419d50b"
+    },
+    {
+      "file": "ndk-repository.xml",
+      "url": "https://dl.google.com/android/repository/repository2-1.xml",
+      "sha256": "2fe5ec9185d840be617b2d336f12f6683c4c365e213599a8be28a2d7fb026afe"
+    },
+    {
+      "file": "linux-genetlink.c",
+      "url": "https://raw.githubusercontent.com/torvalds/linux/v6.6/net/netlink/genetlink.c",
+      "sha256": "1fdfb464d4c2b7303ac14fe22b68e7bb169348e5ce3eeae2ecc4ccea09ff86d3"
+    }
+  ],
+  "hardware": {
+    "localAdb": "no devices",
+    "androidNodes": "two disconnected with no model metadata",
+    "s22Variant": "unknown",
+    "s24Variant": "unknown",
+    "deviceRuntimeTests": 0,
+    "appInstalled": false
+  },
+  "acceptance": {
+    "s22AndroidToIphone": false,
+    "s22IphoneToAndroid": false,
+    "s24AndroidToIphone": false,
+    "s24IphoneToAndroid": false,
+    "wifiPreservation": false,
+    "objectiveAchieved": false
+  },
+  "constraints": {
+    "phoneSettingsChanged": false,
+    "routerSettingsChanged": false,
+    "globalConfigChanged": false,
+    "privilegeBypassAttempted": false,
+    "lanOrWifiDirectFallback": false,
+    "owlBundled": false,
+    "inheritedHelperRelicensed": false
+  },
+  "handoff": "Human hardware/permission blocker; no automatic absent-hardware retry; exact source gate in COMPATIBILITY.md"
+}
